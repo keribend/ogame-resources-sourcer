@@ -1,0 +1,13 @@
+{
+  "name": "Ogame Resources Sourcer",
+  "description": "Automatically extract resources",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://s181-it.ogame.gameforge.com/*"],
+      "run_at": "document_end",
+      "js": ["background.js"]
+    }
+  ]
+}
