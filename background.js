@@ -1,3 +1,4 @@
+let allResources = document.getElementsByClassName("values resources groupresources");
 let res = ""
 for (let i = 1; i < allResources.length; i++) {
     let m = parseInt(allResources[i].querySelector(".metal").firstChild.textContent.replaceAll('.',''))/1000
