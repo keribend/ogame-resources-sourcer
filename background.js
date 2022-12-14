@@ -1,5 +1,8 @@
-let Metal = Number(document.getElementById("resources_metal").dataset.raw/1000);
-let Crystal = Number(document.getElementById("resources_crystal").dataset.raw/1000);
-let Deuterium = Number(document.getElementById("resources_deuterium").dataset.raw/1000);
-let res = Math.round(Metal) + "\t" + Math.round(Crystal) + "\t" + Math.round(Deuterium);
+let res = ""
+for (let i = 1; i < allResources.length; i++) {
+    let m = parseInt(allResources[i].querySelector(".metal").firstChild.textContent.replaceAll('.',''))/1000
+    let c = parseInt(allResources[i].querySelector(".crystal").firstChild.textContent.replaceAll('.',''))/1000
+    let d = parseInt(allResources[i].querySelector(".deuterium").firstChild.textContent.replaceAll('.',''))/1000
+    res += Math.round(m) + "\t" + Math.round(c) + "\t" + Math.round(d) + "\n"
+}
 console.log(res);
