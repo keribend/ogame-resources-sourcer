@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["https://s181-it.ogame.gameforge.com/*component=empire"],
+      "matches": ["https://s194-it.ogame.gameforge.com/*component=empire"],
       "run_at": "document_end",
       "js": ["background.js"]
     }
